@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 import {FaArrowCircleRight} from "react-icons/fa"
+import { Link } from 'react-router-dom';
 const PropertyDataShow = (props) => {
     const {name,image,list} = props.data;
 
@@ -15,7 +16,7 @@ const PropertyDataShow = (props) => {
     <Card.Text style={{color:'red'}}>
      <strong>{list}</strong> 
     </Card.Text>
-    <button style={{backgroundColor:'white',color:'grey'}}>Explore <FaArrowCircleRight/></button>
+   <b> <Link style={{textDecoration:'none',color:'white'}}>Explore <FaArrowCircleRight/></Link></b>
   </Card.ImgOverlay>
 </Card>
 

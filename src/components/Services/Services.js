@@ -30,6 +30,7 @@ const Services = () => {
     return (
         <div className="row m-5">
             <h3>Property Services</h3>
+            <hr style={{color:'red',border:'solid 5px red'}}></hr>
             {
                 servicesData.map((sdata)=><ServicesDataShow sdata={sdata}></ServicesDataShow>)
             }

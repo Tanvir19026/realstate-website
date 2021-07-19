@@ -3,15 +3,16 @@ import sidepic from "../../../images/download (2).jpeg";
 
 import { FaLocationArrow, FaHome, FaDollarSign,FaSearch } from "react-icons/fa";
 import { Nav, NavDropdown } from "react-bootstrap";
+import './MainHeader.css'
 
 
 const MainHeader = () => {
-    const styleIcon = { marginTop: "12px", padding: '5px', display: "flex", margin: '10px', borderRadius:'8px',marginRight:'10px'}
+    const styleIcon = { marginTop: "12px", padding: '5px', display: "flex", margin: '10px', borderRadius:'8px',marginRight:'10px',color: 'white'}
     
     return (
-        <div className="row mt-5 " style={{marginLeft: '40px'}}>
+        <div className="row mt-5 upperSection" style={{marginLeft: '40px'}}>
 
-            <div className="col-md-9 mt-5" style={{margin:'0 auto'}} >
+            <div className="col-md-9 mt-5" style={{color:'white'}} >
                 <h2 >Are you looking for a Home?</h2>
                 <h3 >You are in right place.</h3>
                 <br />
@@ -21,7 +22,8 @@ const MainHeader = () => {
                         borderRadius: "20px",
                         width: "100%",
                         height: "35%",
-                        display: "flex"
+                        display: "flex",
+                        backgroundColor:'grey'
                     }}
                 >
                     <div style={styleIcon}>
@@ -54,8 +56,8 @@ const MainHeader = () => {
                             </NavDropdown>
                         </Nav>
                     </div>
-                    <div style={styleIcon}>
-                    <FaSearch style={{marginTop:'10px'}}/>
+                    <div style={styleIcon} className="bg-dark">
+                    <FaSearch style={{marginTop:'10px',color:"white"}}/>
                      <input type="text" style={{borderRadius:'8px',padding:'10px',margin:'10px'}}placeholder="Search"/>
                     </div>
 

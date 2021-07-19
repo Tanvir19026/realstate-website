@@ -32,7 +32,7 @@ const PropertyShow = () => {
     return (
         <div className=" row mt-5 m-5">
             <h3>We've got properties for everyone</h3>
-            
+            <hr style={{color:'blue',border:'solid 5px black'}}></hr>
             
                 {
                   propertyData.map((data)=><PropertyDataShow data={data}></PropertyDataShow>)

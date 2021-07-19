@@ -30,6 +30,7 @@ const FeaturedProject = () => {
         <div className="row m-4">
             <div className="m-3">
             <h3>Featured Projects</h3>
+            <hr style={{color:'green',border:'solid 5px green'}}></hr>
             </div>
             
             {
